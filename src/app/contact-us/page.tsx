@@ -34,7 +34,7 @@ export default function Page() {
             name="email"
             value={email}
             placeholder="Enter Your Email"
-            className="w-full border outline-none rounded-full px-4 py-2 shadow"
+            className="bg-transparent w-full border outline-none rounded-full px-4 py-2 shadow"
             onChange={(e: any) => setemail(e.target.value)}
           />
           <textarea
@@ -46,7 +46,7 @@ export default function Page() {
           />
           <button
             type="submit"
-            className="bg-white/40 rounded-full shadow w-full py-2 font-bold"
+            className="bg-transparent border rounded-full shadow w-full py-2 font-bold"
           >
             Submit
           </button>
