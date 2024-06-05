@@ -1,12 +1,11 @@
 "use client";
 
 import { Meteors } from "@/components/ui/meteors";
-import { PlaceholdersAndVanishInput } from "@/components/ui/placeholders-and-vanish-input";
-import React from "react";
+import { useState } from "react";
 
-export default function page() {
-  const [email, setemail] = React.useState("");
-  const [message, setmessage] = React.useState("");
+export default function Page() {
+  const [email, setemail] = useState("");
+  const [message, setmessage] = useState("");
   const placeholders = [
     "Contact Us for any query",
     "24×7 customer service",
