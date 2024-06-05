@@ -12,10 +12,10 @@ export default function Page() {
     "Enter Yout Email Address",
   ];
 
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+  const handleChange = (e: any) => {
     setemail(e.target.value);
   };
-  const onSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+  const onSubmit = (e: any) => {
     e.preventDefault();
     console.log("submitted");
   };
@@ -35,18 +35,14 @@ export default function Page() {
             value={email}
             placeholder="Enter Your Email"
             className="w-full border outline-none rounded-full px-4 py-2 shadow"
-            onChange={(e: React.ChangeEvent<HTMLInputElement>) =>
-              setemail(e.target.value)
-            }
+            onChange={(e: any) => setemail(e.target.value)}
           />
           <textarea
             rows={10}
             className="w-full bg-transparent border outline-none rounded-xl px-4 py-2 shadow"
             placeholder="Enter Your Message..."
             value={message}
-            onChange={(e: React.ChangeEvent<HTMLInputElement>) =>
-              setmessage(e.target.value)
-            }
+            onChange={(e: any) => setmessage(e.target.value)}
           />
           <button
             type="submit"
