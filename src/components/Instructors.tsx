@@ -36,12 +36,15 @@ const instructors = [
 
 export default function Instructors() {
   return (
-    <div className="relative h-[40rem] overflow-hidden flex items-center justify-center">
-      <WavyBackground className="w-full max-w-7xl mx-auto flex flex-col items-center justify-center h-full">
-        <h2 className="text-2xl md:text-4xl lg:text-7xl text-white font-bold text-center mb-8">
+    <div className="relative w-full h-lvh overflow-hidden flex items-center justify-center">
+      <WavyBackground
+        colors={["#74c7ec", "#cba6f7", "#b4befe", "#eba0ac", "#94e2d5"]}
+        className="flex flex-col items-center justify-center"
+      >
+        <h2 className="text-2xl md:text-4xl lg:text-7xl font-bold text-center mb-8">
           Meet Our Instructors
         </h2>
-        <p className="text-base md:text-lg text-white text-center mb-4">
+        <p className="text-text/70 text-center mb-4">
           Discover the talented professionals who will guide your musical
           journey
         </p>

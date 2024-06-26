@@ -90,7 +90,11 @@ const config: Config = {
       },
     },
   },
-  plugins: [addVariablesForColors, addSvgPatterns],
+  plugins: [
+    addVariablesForColors,
+    addSvgPatterns,
+    require("@catppuccin/tailwindcss"),
+  ],
 };
 
 export default config;

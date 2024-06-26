@@ -51,10 +51,10 @@ const footerItems = {
 };
 export default function Footer() {
   return (
-    <footer className="bg-black text-gray-400 py-12">
+    <footer className="py-12">
       <div className="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 px-4 sm:px-6 lg:px-8">
         <div>
-          <h2 className="text-white text-lg font-semibold mb-4">About Us</h2>
+          <h2 className="text-lg font-semibold mb-4">About Us</h2>
           <p className="mb-4">
             Music School is a premier institution dedicated to teaching the art
             and science of music. We nurture talent from the ground up,
@@ -62,11 +62,11 @@ export default function Footer() {
           </p>
         </div>
         <div>
-          <h2 className="text-white text-lg font-semibold mb-4">Quick Links</h2>
+          <h2 className="text-lg font-semibold mb-4">Quick Links</h2>
           {footerItems.quickLinks.map((item: quickLink) => (
             <Link
               href={item.slug}
-              className="flex flex-col hover:text-white transition-colors duration-300"
+              className="flex flex-col transition-colors duration-300"
               key={item.slug}
             >
               {item.title}
@@ -74,11 +74,11 @@ export default function Footer() {
           ))}
         </div>
         <div>
-          <h2 className="text-white text-lg font-semibold mb-4">Follow us</h2>
+          <h2 className="text-lg font-semibold mb-4">Follow us</h2>
           {footerItems.followUs.map((item: followUs) => (
             <Link
               href={item.slug}
-              className="flex flex-col hover:text-white transition-colors duration-300"
+              className="flex flex-col transition-colors duration-300"
               key={item.slug}
             >
               {item.name}
@@ -86,7 +86,7 @@ export default function Footer() {
           ))}
         </div>
         <div>
-          <h2 className="text-white text-lg font-semibold mb-4">Contact Us</h2>
+          <h2 className="text-lg font-semibold mb-4">Contact Us</h2>
           <p>New Delhi, India</p>
           <p>Delhi 10001</p>
           <p>Email: info@musicschool.com</p>

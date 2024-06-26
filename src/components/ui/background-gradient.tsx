@@ -22,7 +22,7 @@ export const BackgroundGradient = ({
     },
   };
   return (
-    <div className={cn("relative p-[4px] group", containerClassName)}>
+    <div className={cn("relative p-1 group", containerClassName)}>
       <motion.div
         variants={animate ? variants : undefined}
         initial={animate ? "initial" : undefined}
@@ -41,7 +41,7 @@ export const BackgroundGradient = ({
         }}
         className={cn(
           "absolute inset-0 rounded-3xl z-[1] opacity-60 group-hover:opacity-100 blur-xl  transition duration-500 will-change-transform",
-          " bg-[radial-gradient(circle_farthest-side_at_0_100%,#00ccb1,transparent),radial-gradient(circle_farthest-side_at_100%_0,#7b61ff,transparent),radial-gradient(circle_farthest-side_at_100%_100%,#ffc414,transparent),radial-gradient(circle_farthest-side_at_0_0,#1ca0fb,#141316)]",
+          " bg-[radial-gradient(circle_farthest-side_at_0_100%,#94e2d5,transparent),radial-gradient(circle_farthest-side_at_100%_0,#b4befe,transparent),radial-gradient(circle_farthest-side_at_100%_100%,#fab387,transparent),radial-gradient(circle_farthest-side_at_0_0,#89b4fa,#1e1e2e)]",
         )}
       />
       <motion.div
@@ -62,11 +62,13 @@ export const BackgroundGradient = ({
         }}
         className={cn(
           "absolute inset-0 rounded-3xl z-[1] will-change-transform",
-          "bg-[radial-gradient(circle_farthest-side_at_0_100%,#00ccb1,transparent),radial-gradient(circle_farthest-side_at_100%_0,#7b61ff,transparent),radial-gradient(circle_farthest-side_at_100%_100%,#ffc414,transparent),radial-gradient(circle_farthest-side_at_0_0,#1ca0fb,#141316)]",
+          " bg-[radial-gradient(circle_farthest-side_at_0_100%,#94e2d5,transparent),radial-gradient(circle_farthest-side_at_100%_0,#b4befe,transparent),radial-gradient(circle_farthest-side_at_100%_100%,#fab387,transparent),radial-gradient(circle_farthest-side_at_0_0,#89b4fa,#1e1e2e)]",
         )}
       />
 
-      <div className={cn("relative z-10", className)}>{children}</div>
+      <div className={cn("relative z-10 bg-base rounded-3xl", className)}>
+        {children}
+      </div>
     </div>
   );
 };
